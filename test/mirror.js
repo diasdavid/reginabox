@@ -42,7 +42,7 @@ describe('mirror', function () {
     })
     rimraf(path.join(regDir, 'foobartestthing'), function () {
       process.argv[3] = 'test/registry'
-      mirror = require('../lib/mirror')
+      mirror = require('../src/lib/mirror')
       ncp(path.join(__dirname, 'foobartestthing'), path.join(__dirname, 'registry', 'foobartestthing'), function () {
         setTimeout(function () {
           port = mirror.port

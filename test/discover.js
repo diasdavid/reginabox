@@ -1,4 +1,5 @@
 /* globals describe, before, after, it */
+
 var mockery = require('mockery')
 var assert = require('assert')
 var EventEmitter = require('events').EventEmitter
@@ -44,7 +45,7 @@ describe('discover', function () {
       mockery.resetCache()
     })
     it('finds it', function (done) {
-      require('../lib/discover')
+      require('../src/lib/discover')
       setTimeout(function () {
         assert.equal(exitCode, 1)
         assert.deepEqual(logged, ['Searching...', "Couldn't find any reginabox registries!"])
@@ -93,7 +94,7 @@ describe('discover', function () {
     })
 
     it('finds it', function (done) {
-      require('../lib/discover')
+      require('../src/lib/discover')
       setTimeout(function () {
         assert.equal(exitCode, 1)
         assert.deepEqual(logged, ['Searching...', "Couldn't find any reginabox registries!"])
@@ -148,7 +149,7 @@ describe('discover', function () {
     })
 
     it('finds it', function (done) {
-      require('../lib/discover')
+      require('../src/lib/discover')
       setTimeout(function () {
         assert.deepEqual(logged, [
           'Searching...',
@@ -219,7 +220,7 @@ describe('discover', function () {
       mockery.resetCache()
     })
     it('finds it', function (done) {
-      require('../lib/discover')
+      require('../src/lib/discover')
       setTimeout(function () {
         assert.deepEqual(logged, [
           'Searching...',
