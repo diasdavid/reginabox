@@ -2,8 +2,7 @@
   "name": "reginabox",
   "version": "1.0.0",
   "description": "instant npm mirror",
-  "main": "index.js",
-  "bin": "index.js",
+  "bin": "bin/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:yahoo/reginabox.git"

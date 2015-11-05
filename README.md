@@ -18,6 +18,10 @@ Things are a little trickier on Windows. This project depends on [`node_mdns`](h
 
 `$ reginabox discover` queries the local network for servers that are run using the command above. Once it finds a usable server, it outputs the command to set the registry, and then exits.
 
+### Custom storage driver
+
+`reginabox mirror <outputfolder> <pathToCustomBlobStore> <readonly>`
+
 ### License
 
 See LICENSE.txt

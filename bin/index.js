@@ -7,9 +7,9 @@ See LICENSE.txt file.
 var command = process.argv[2]
 
 if (command === 'mirror') {
-  require('./lib/mirror')
+  require('../src/lib/mirror')
 } else if (command === 'discover') {
-  require('./lib/discover')
+  require('../src/lib/discover')
 } else {
   console.log('reginabox - npm in a box\n')
   console.log('Usage:')
